@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#main_nav,
+a {
+  color: #375760;
+  background-color: #f8d061;
+  text-decoration: none;
+  display: block;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main_nav,
+li {
+  list-style: none;
+  position: relative;
+  text-decoration: none;
+  display: inline;
+}
