@@ -1,27 +1,56 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+
+
+
+
+
+.search {
+  text-align: center;
 }
 
-#main_nav,
-a {
-  color: #375760;
-  background-color: #f8d061;
-  text-decoration: none;
-  display: block;
-  font-family: itc-avant-garde-gothic-pro, sans-serif;
-  font-style: normal;
-  font-weight: 300;
+#main_nav ul {
   display: flex;
-  align-items: center;
+
+}
+
+section {
+ display: flex;
+ justify-content: center;
+}
+
+.logo svg {
+  width: 120;
+  height: 50px;
+  margin-top: 16px;  
+}
+
+.slogan img {
+  width: 1640px;
+  height: 621px;
+}
+
+.adds_advice {
+  flex-direction: row;
   justify-content: center;
 }
 
-#main_nav,
-li {
-  list-style: none;
-  position: relative;
-  text-decoration: none;
-  display: inline;
+.advertisement img {
+  width: 1088px;
+  height: 271px;  
 }
+
+.hikes img {
+  width: 547px;
+  height: 271px;
+  margin-left: 5px;
+}
+
+.about_us img {
+  width: 1640px;
+  height: 917px;
+}
+
+.contact img {
+  width: 1640px;
+  height: 1051px;
+}
+
