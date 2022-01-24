@@ -1,66 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-
-
-
+header {
+  position: sticky;
+}
 
 .search {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-#main_nav, .ddbtn {
-  background-color:#f8d061;
-  display: flex;
+.main_nav ul {
+  list-style: none;
+  background-color: #f8d061;
+  margin-bottom: 0px;
+  padding-left: 450px;
 }
 
-.ddbtn {
-  color: #375760;
-  font-weight: bold;
-  border: none;
+.main_nav ul li {
+  display: inline-block;
 }
 
-.dropdown {
-  position: relative;
-  display:block;
-}
-
-.dropdown_content {
-  display:none;
-  position: absolute;
-  background-color: #ffff;
-  min-width: 160px;
-  z-index: 1;
-  
-
-}
-
-.dropdown_content a {
-  color: #375760;
-  padding:20px 20px;
+.main_nav ul li a {
+  padding: 20px;
   text-decoration: none;
-  display:block; 
-
-}
-
-.dropdown_content a:hover {
-  color:#375760;
-  
-}
-
-.dropdown:hover {
-  display:block;
-  background-color:#fff;
   color: #375760;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
 }
 
 section {
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
 
 .logo svg {
   width: 120;
   height: 50px;
-  margin-top: 16px;  
+  margin-top: 40px;
 }
 
 .slogan img {
@@ -70,12 +51,11 @@ section {
 
 .adds_advice {
   flex-direction: row;
-
 }
 
 .advertisement img {
   width: 1088px;
-  height: 271px;  
+  height: 271px;
 }
 
 .hikes img {
@@ -93,4 +73,3 @@ section {
   width: 1640px;
   height: 1051px;
 }
-
