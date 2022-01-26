@@ -36,6 +36,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: left;
+
   width: 100%;
 }
 
@@ -68,7 +69,7 @@ svg {
 }
 
 .slogan {
-  height: 621px;
+  height: 570px;
   width: 100%;
   background-image: url("../images/slogan_pushing_the_comfort_zone.svg");
   background-repeat: no-repeat;
@@ -76,15 +77,16 @@ svg {
   background-size: cover;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: right;
   padding: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   object-fit: cover;
 }
 
 .cta button {
   border-style: none;
   margin: 20px 40px;
+  box-shadow: -30px 30px 30px rgba(0, 0, 0, 3);
 }
 
 .cta button a {
@@ -100,6 +102,7 @@ svg {
 .adds_advice {
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .advertisement img {
