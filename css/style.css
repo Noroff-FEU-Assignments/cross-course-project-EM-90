@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "roboto", sans-serif;
 }
 
 header {
@@ -48,7 +49,6 @@ header {
   color: #375760;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "roboto", sans-serif;
 }
 
 @media (min-width: 1080px) {
@@ -78,9 +78,23 @@ svg {
   align-items: flex-end;
   justify-content: flex-end;
   padding: 20px;
+  margin-bottom: 5px;
+  object-fit: cover;
 }
 
-.cta {
+.cta button {
+  border-style: none;
+  margin: 20px 40px;
+}
+
+.cta button a {
+  background-color: rgb(10, 100, 55);
+  color: white;
+  text-decoration: none;
+  padding: 20px 100px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .adds_advice {
@@ -90,13 +104,10 @@ svg {
 
 .advertisement img {
   width: 100%;
-  height: 271px;
 }
 
 .hikes img {
   width: 100%;
-  height: 271px;
-  margin-left: 5px;
 }
 
 .about_us img {
@@ -109,4 +120,18 @@ svg {
   width: 100%;
   height: 1051px;
   object-fit: cover;
+}
+
+#message-box {
+}
+
+.fotter-container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  background-color: rgb(10, 59, 47);
+  color: white;
+  font-family: "roboto", sans-serif;
+  grid-gap: 500px;
+  justify-content: center;
+  padding-top: 20px;
 }
