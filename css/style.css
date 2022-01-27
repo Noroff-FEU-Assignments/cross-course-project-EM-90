@@ -6,13 +6,20 @@
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  background-color: #e7ebeb;
 }
 
 .header_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  padding: 10px 20px;
 }
 
 .search {
@@ -28,13 +35,10 @@ header {
 }
 
 .main_nav {
-  display: none;
   background-color: #f8d061;
-  width: 100%;
 }
 .main_nav ul {
   list-style: none;
-  display: flex;
   justify-content: left;
 
   width: 100%;
@@ -80,13 +84,12 @@ svg {
   justify-content: right;
   padding: 20px;
   margin-bottom: 10px;
-  object-fit: cover;
 }
 
 .cta button {
   border-style: none;
   margin: 20px 40px;
-  box-shadow: -30px 30px 30px rgba(0, 0, 0, 3);
+  box-shadow: -5px 30px 30px rgba(0, 0, 0, 3);
 }
 
 .cta button a {
@@ -97,6 +100,17 @@ svg {
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .slogan {
+    background-size: cover;
+    background-position-x: 8%;
+  }
+  .cta button a {
+    padding: 10px 100px;
+    font-size: 15px;
+  }
 }
 
 .adds_advice {
@@ -113,6 +127,14 @@ svg {
   width: 100%;
 }
 
+@media (max-width: 820px) {
+  .adds_advice {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
 .about_us img {
   width: 100%;
   height: 917px;
@@ -126,6 +148,7 @@ svg {
 }
 
 #message-box {
+  align-items: center;
 }
 
 .fotter-container {
