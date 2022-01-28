@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .search {
@@ -37,15 +37,20 @@ header {
 .main_nav {
   background-color: #f8d061;
 }
+#menu-checkbox {
+  display: none;
+}
+.fas {
+  padding: 20px 20px;
+}
 .main_nav ul {
   list-style: none;
   justify-content: left;
-
-  width: 100%;
+  padding: 10px;
 }
 
 .main_nav ul li {
-  display: inline-block;
+  display: inline;
 }
 
 .main_nav ul li a {
@@ -56,9 +61,14 @@ header {
   font-weight: 500;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 812px) {
   .main_nav {
-    display: block;
+    
+  }
+  .fas {
+    display: none;
+  }
+ 
   }
 }
 
@@ -102,17 +112,6 @@ svg {
   text-transform: uppercase;
 }
 
-@media (max-width: 700px) {
-  .slogan {
-    background-size: cover;
-    background-position-x: 8%;
-  }
-  .cta button a {
-    padding: 10px 100px;
-    font-size: 15px;
-  }
-}
-
 .adds_advice {
   flex-direction: row;
   justify-content: center;
@@ -121,11 +120,39 @@ svg {
 
 .advertisement img {
   width: 100%;
+  
 }
 
 .hikes img {
   width: 100%;
 }
+
+
+@media (max-width: 810px) {
+  .slogan {
+    background-size: cover;
+    background-position-x: 8%;
+  }
+  .cta button a {
+    padding: 10px 100px;
+    font-size: 15px;
+  }
+  .nav-container {
+    display: none;
+  }
+  .main_nav {
+    font-size: 40px;
+  }
+  .main_nav ul li a {
+    font-size: 20px;
+  }
+
+  #menu-checkbox:checked ~ .nav-container {
+    display: block;
+  }
+}
+
+
 
 @media (max-width: 820px) {
   .adds_advice {
@@ -140,6 +167,8 @@ svg {
   height: 917px;
   object-fit: cover;
 }
+
+
 
 .contact img {
   width: 100%;
