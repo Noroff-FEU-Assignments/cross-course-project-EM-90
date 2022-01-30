@@ -33,7 +33,7 @@ header {
 }
 
 .nav-container {
-  display: flex;
+  display: inline;
 }
 
 .main_nav {
@@ -96,13 +96,15 @@ svg {
   margin-bottom: 10px;
 }
 
-.cta button {
+.cta button,
+.send-message {
   border-style: none;
   margin: 20px 40px;
   box-shadow: -5px 30px 30px rgba(0, 0, 0, 3);
 }
 
-.cta button a {
+.cta button a,
+.send-message a {
   background-color: rgb(10, 100, 55);
   color: white;
   text-decoration: none;
@@ -211,15 +213,20 @@ svg {
   textarea {
     inline-size: 90%;
   }
+  .fotter-container {
+    display: grid;
+    grid-column: 1;
+    justify-self: center;
+  }
 }
 
 .fotter-container {
   display: grid;
-  grid-template-columns: 200px 200px;
-  background-color: rgb(10, 59, 47);
+  grid-template-columns: 300px 300px;
+  background-color: #375760;
   color: white;
-  font-family: "roboto", sans-serif;
-  grid-gap: 500px;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  grid-gap: 100px;
   justify-content: center;
   padding-top: 20px;
 }
