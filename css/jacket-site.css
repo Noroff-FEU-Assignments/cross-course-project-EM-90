@@ -1,2 +1,31 @@
 @import url("media.css");
 @import url("navigation.css");
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header-add header-add header-add"
+    "product-one product-two product-three"
+    "product-one product-two product-three"
+    "product-one product-two product-three"
+    "product-one product-two product-three"
+    "product-one product-two product-three";
+}
+
+section {
+  min-height: 250px;
+}
+
+.header-add {
+  grid-area: header-add;
+  background-color: lightgray;
+  background-image: url("../images/kal-visuals-X8oLaedw-OI-unsplash.png");
+  background-position: center;
+  background-size: cover;
+}
+.header-add h3 {
+  color: white;
+}

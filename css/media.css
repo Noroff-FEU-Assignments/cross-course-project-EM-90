@@ -57,6 +57,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .main_nav ul {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 370px) {
   input {
     width: 100px;
