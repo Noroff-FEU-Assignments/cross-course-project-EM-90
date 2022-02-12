@@ -1,0 +1,64 @@
+@media (max-width: 820px) {
+  .adds_advice {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 812px) {
+  label .fas {
+    display: none;
+  }
+}
+
+@media (max-width: 810px) {
+  .slogan {
+    background-size: cover;
+    background-position-x: 8%;
+  }
+  .cta button a {
+    padding: 10px 100px;
+    font-size: 15px;
+  }
+  .nav-container {
+    display: none;
+  }
+  .main_nav {
+    font-size: 40px;
+  }
+
+  .main_nav ul li {
+    display: flex;
+  }
+  .main_nav ul li a {
+    font-size: 20px;
+  }
+
+  #menu-checkbox:checked ~ .nav-container {
+    display: block;
+  }
+}
+
+@media (max-width: 710px) {
+  textarea {
+    inline-size: 90%;
+  }
+  .fotter-container {
+    display: grid;
+  }
+}
+
+@media (max-width: 620px) {
+  .about-us p {
+    margin-bottom: 100px;
+    width: 250px;
+    margin-block-start: 200px;
+  }
+}
+
+@media (max-width: 370px) {
+  input {
+    width: 100px;
+  }
+}
