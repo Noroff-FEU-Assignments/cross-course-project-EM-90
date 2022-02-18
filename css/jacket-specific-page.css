@@ -1,0 +1,13 @@
+@import url("navigation.css");
+@import url("header-add.css");
+
+.header-add {
+  height: 30vh;
+}
+
+.rd-explorer-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 50vh;
+}
