@@ -1,13 +1,28 @@
 .header-add {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-image: url("../images/kal-visuals-X8oLaedw-OI-unsplash.png");
   background-position: center;
   background-size: cover;
+  min-height: 300px;
+}
+
+.sign-up-add {
+  text-transform: uppercase;
+}
+
+.off {
+  display: flex;
+  justify-items: center;
+  font-size: 30px;
+  color: orange;
 }
 
 .header-add .sign-up-add {
   color: white;
   background-color: #375760;
-  padding: 30px 100px;
+  padding: 30px 50px;
   font-size: 20px;
   display: inline-block;
 }
