@@ -104,3 +104,10 @@ ul {
   text-transform: uppercase;
   color: white;
 }
+
+.discount {
+  background-color: orange;
+  display: inline-block;
+  padding: 20px 20px;
+  border-radius: 50%;
+}
