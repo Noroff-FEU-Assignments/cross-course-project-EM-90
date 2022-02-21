@@ -19,7 +19,7 @@
 }
 
 .picture-of-item {
-  height: 80vh;
+  height: 40vh;
   grid-area: img;
   grid-column: 2;
 }
@@ -85,4 +85,8 @@ input {
   font-size: 15px;
   border: none;
   text-decoration: underline;
+}
+
+.dc-cta {
+  padding: 20px 50px;
 }
