@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   min-height: 300px;
+  width: 100%;
 }
 
 .sign-up-add {
