@@ -15,7 +15,7 @@
 }
 
 .picture-of-item {
-  width: 100%;
+  width: 80%;
   max-height: 500px;
   grid-column: 1/2;
   grid-row: 1/4;
@@ -121,6 +121,7 @@ select {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: darkslategray;
+  margin-bottom: 0px;
 }
 
 .text-column1,
