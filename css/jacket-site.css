@@ -61,7 +61,8 @@ section {
   grid-template-rows: 1fr 1fr 30px 40px;
   grid-template-columns: 1fr 1fr;
   background-color: #f3f3f3;
-  border: 1px solid orange;
+  border: 2px solid orange;
+  transition: 1s;
 }
 
 .product-one img,
@@ -78,7 +79,8 @@ section {
 .product-three-row4 img,
 .product-one-row5 img,
 .product-two-row5 img,
-.product-three-row5 img {
+.product-three-row5 img,
+a {
   width: 100%;
   height: 300px;
 
@@ -86,6 +88,9 @@ section {
   grid-row: 1/3;
 }
 
+a:hover {
+  transform: scale(102%);
+}
 .name {
   grid-row: 4;
   grid-column: 1;

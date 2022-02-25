@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+
+.grid-container-form {
+  display: grid;
+  margin: 20px 80px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  grid-column: 2;
+}
+
+.shippment-info,
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form__input-shippment,
+.form__input-payment {
+  padding: 5px 20px;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.payment-icons {
+  margin: 0 auto;
+}
+
+.fa-cc-visa,
+.fa-cc-mastercard,
+.fa-paypal {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.fa-cc-mastercard {
+  color: rgb(121, 34, 34);
+}
+
+.fa-cc-visa,
+.fa-paypal {
+  color: rgb(28, 28, 161);
+}
+
+.form__input-payment-month,
+.form__input-payment-year,
+.form__input-payment-cvc {
+  width: 20%;
+  padding: 5px;
+}
+
+.product-and-total {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: lightgray;
+  border: 1px solid orange;
+}
+
+.product-and-total img {
+  height: 50vh;
+}
+
+.last-summary {
+  margin: 0 auto;
+}
+
+.cost {
+  padding-top: 50px;
+}
+
+.cta-container {
+  margin: auto;
+}
+
+.checkout {
+  background-color: rgb(10, 100, 55);
+  color: white;
+  text-decoration: none;
+  padding: 20px 100px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1528px) {
+  .grid-container-form {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 2;
+  }
+
+  .shippment-info,
+  .payment-info {
+    display: flex;
+    width: 90%;
+    height: 55%;
+  }
+
+  .form__input-shippment,
+  .form__input-payment {
+    padding: 5px 20px;
+    margin: 5px;
+  }
+  .checkout {
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1158px) {
+  .grid-container-form {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .product-and-total img {
+    height: 30vh;
+    width: 50%;
+    margin: auto;
+  }
+
+  .product-and-total {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cost {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 739px) {
+  .grid-container-form {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .form {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+
+  .product-and-total {
+    height: 30vh;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
