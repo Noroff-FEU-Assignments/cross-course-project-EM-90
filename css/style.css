@@ -29,6 +29,13 @@ section {
   margin-bottom: 10px;
 }
 
+.cta,
+.send-message {
+  border-style: none;
+  margin: 20px 40px;
+  box-shadow: -5px 30px 30px rgba(0, 0, 0, 3);
+}
+
 .adds_advice {
   flex-direction: row;
   margin-bottom: 10px;

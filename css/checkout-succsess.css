@@ -88,4 +88,8 @@ footer {
     padding: 20px;
     font-size: 20px;
   }
+  .text-colum1,
+  .text-colum2 {
+    font-size: 12px;
+  }
 }
