@@ -160,18 +160,37 @@ form {
     display: grid;
     margin: 0px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
   }
 
-  .form {
+  .product-and-total {
+    flex-direction: column;
     grid-column: 1;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
 
-  .product-and-total {
-    height: 30vh;
+  .product-and-total img {
+    height: 50vh;
+    margin-top: 20px;
+  }
+
+  form {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
+    align-items: center;
+  }
+}
+
+@media (max-width: 537px) {
+  .product-and-total img {
+    height: 40vh;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 373px) {
+  .product-and-total img {
+    height: 30vh;
+    margin-top: 20px;
   }
 }
