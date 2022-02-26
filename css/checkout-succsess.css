@@ -1,0 +1,91 @@
+@import url("/css/navigation.css");
+@import url("/css/header-add.css");
+@import url("/css/media.css");
+@import url("/css/cta.css");
+
+body {
+  background-color: #e7ebeb;
+}
+
+.product-page {
+  position: relative;
+  min-height: 600px;
+}
+
+.product-background {
+  object-fit: cover;
+  inset: 0;
+}
+
+.product-background img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 1500px;
+  max-width: 2600px;
+  opacity: 45%;
+}
+.product-information {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.back-to-home {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 200px;
+  margin-bottom: 0px;
+  background-color: #375760;
+  color: white;
+}
+
+.text-colum1,
+.text-colum2 {
+  position: relative;
+}
+
+@media (max-width: 932px) {
+  .back-to-home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .product-information {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 502px) {
+  .back-to-home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .cta {
+    font-size: 15px;
+    padding: 10px 50px;
+  }
+  .product-information {
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+  }
+}

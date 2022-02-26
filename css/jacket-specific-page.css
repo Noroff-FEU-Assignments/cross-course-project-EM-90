@@ -1,5 +1,7 @@
 @import url("navigation.css");
 @import url("header-add.css");
+@import url("/css/media.css");
+@import url("/css/cta.css");
 
 .rd-explorer-container {
   display: grid;
@@ -85,22 +87,20 @@
 .small,
 .medium,
 .large {
-  margin: 5px;
+  margin: 20px;
   padding: 20px 40px;
   margin-bottom: 40px;
   border: 1px solid orange;
 }
 
-.add-to-cart {
-  padding: 20px 55px;
-  background-color: green;
-  display: inline-block;
-  margin-left: 5px;
+.small:hover,
+.medium:hover,
+.large:hover {
+  background-color: #e7ebeb;
 }
 
-.add-to-cart a {
-  text-decoration: none;
-  color: white;
+.cta {
+  margin-left: 20px;
 }
 
 @media (max-width: 1708px) {
