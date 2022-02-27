@@ -1,5 +1,14 @@
-@import url("media.css");
 @import url("navigation.css");
+@import url("header-add.css");
+@import url("/css/cta.css");
+@import url("/css/root.css");
+@import url("/css/media.css");
+
+/*JACKET SITE*/
+
+.jackets {
+  padding: 10px 80px;
+}
 
 .grid-container {
   padding: 20px 80px;
@@ -35,8 +44,8 @@ section {
 }
 
 .header-add .sign-up-add {
-  color: white;
-  background-color: #375760;
+  color: var(--white-add-color);
+  background-color: var(--footer-and-text-color);
   padding: 30px 50px;
   font-size: 20px;
   display: inline-block;
@@ -61,7 +70,7 @@ section {
   grid-template-rows: 1fr 1fr 30px 40px;
   grid-template-columns: 1fr 1fr;
   background-color: #f3f3f3;
-  border: 2px solid orange;
+  border: var(--border-color) 2px solid;
   transition: 1s;
 }
 

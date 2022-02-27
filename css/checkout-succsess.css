@@ -1,7 +1,7 @@
 @import url("/css/navigation.css");
 @import url("/css/header-add.css");
-@import url("/css/media.css");
 @import url("/css/cta.css");
+@import url("/css/media.css");
 
 body {
   background-color: #e7ebeb;
@@ -53,43 +53,4 @@ footer {
 .text-colum1,
 .text-colum2 {
   position: relative;
-}
-
-@media (max-width: 932px) {
-  .back-to-home {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .product-information {
-    position: relative;
-    padding: 20px;
-    font-size: 30px;
-  }
-  footer {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 502px) {
-  .back-to-home {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .cta {
-    font-size: 15px;
-    padding: 10px 50px;
-  }
-  .product-information {
-    position: relative;
-    padding: 20px;
-    font-size: 20px;
-  }
-  .text-colum1,
-  .text-colum2 {
-    font-size: 12px;
-  }
 }

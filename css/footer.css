@@ -5,8 +5,9 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  height: 200px;
+  height: 100%;
   margin-bottom: 0px;
   background-color: #375760;
   color: white;
+  padding-top: 20px;
 }

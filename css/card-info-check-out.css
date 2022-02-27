@@ -2,6 +2,7 @@
 @import url("/css/header-add.css");
 @import url("/css/navigation.css");
 @import url("/css/footer.css");
+@import url("/css/media.css");
 
 * {
   margin: 0px;
@@ -91,121 +92,4 @@ form {
 
 .cta-container {
   margin: auto;
-}
-
-@media (max-width: 1528px) {
-  .grid-container-form {
-    display: grid;
-    margin: 0px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    grid-column: 2;
-  }
-
-  .shippment-info,
-  .payment-info {
-    display: flex;
-    width: 90%;
-    height: 55%;
-  }
-
-  .form__input-shippment,
-  .form__input-payment {
-    padding: 5px 20px;
-    margin: 5px;
-  }
-  .checkout {
-    padding: 10px 50px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 1158px) {
-  .grid-container-form {
-    display: grid;
-    margin: 0px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-  }
-  .product-and-total img {
-    height: 30vh;
-    width: 50%;
-    margin: auto;
-  }
-
-  .product-and-total {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .cost {
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 739px) {
-  .grid-container-form {
-    display: grid;
-    margin: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .product-and-total {
-    flex-direction: column;
-    grid-column: 1;
-    grid-row: 1/2;
-  }
-
-  .product-and-total img {
-    height: 50vh;
-    margin-top: 20px;
-  }
-
-  form {
-    grid-column: 1;
-    grid-row: 2;
-    align-items: center;
-  }
-}
-
-@media (max-width: 537px) {
-  .product-and-total img {
-    height: 40vh;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 373px) {
-  .product-and-total img {
-    height: 30vh;
-    margin-top: 20px;
-  }
-
-  form {
-    grid-column: 1;
-    grid-row: 2;
-    align-items: center;
-    width: 100%;
-  }
-  .shippment-info,
-  .payment-info {
-    display: flex;
-    width: 80%;
-  }
-  .form__input-shippment,
-  .form__input-payment {
-    width: 90%;
-  }
-  .cta {
-    font-size: 15px;
-    padding: 10px 50px;
-  }
 }
