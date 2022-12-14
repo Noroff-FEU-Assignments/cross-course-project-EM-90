@@ -51,21 +51,7 @@ section {
   display: inline-block;
 }
 
-.product-one,
-.product-two,
-.product-three,
-.product-one-row2,
-.product-two-row2,
-.product-three-row2,
-.product-one-row3,
-.product-two-row3,
-.product-three-row3,
-.product-one-row4,
-.product-two-row4,
-.product-three-row4,
-.product-one-row5,
-.product-two-row5,
-.product-three-row5 {
+.product {
   display: grid;
   grid-template-rows: 1fr 1fr 30px 40px;
   grid-template-columns: 1fr 1fr;
@@ -74,21 +60,7 @@ section {
   transition: 1s;
 }
 
-.product-one img,
-.product-two img,
-.product-three img,
-.product-one-row2 img,
-.product-two-row2 img,
-.product-three-row2 img,
-.product-one-row3 img,
-.product-two-row3 img,
-.product-three-row3 img,
-.product-one-row4 img,
-.product-two-row4 img,
-.product-three-row4 img,
-.product-one-row5 img,
-.product-two-row5 img,
-.product-three-row5 img,
+.product img,
 .hover-effect {
   width: 100%;
   height: 300px;

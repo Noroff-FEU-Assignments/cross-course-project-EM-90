@@ -23,6 +23,11 @@
   grid-row: 1/5;
 }
 
+.cart-image {
+  max-width: 100px;
+  max-height: 150px;
+}
+
 .content-container {
   grid-column: 2/4;
   grid-row: 1/4;
