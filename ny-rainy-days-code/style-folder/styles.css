@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 /*NAV AND HERO SECTION*/
 
 html {
@@ -14,6 +18,9 @@ html {
 
 body {
   font-family: "EB garamond", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 h1,
@@ -25,7 +32,7 @@ h2 {
 
 .limited-offer {
   text-align: center;
-  padding-top: 85px;
+  padding-top: 10px;
   padding-bottom: 4px;
   margin-bottom: 10px;
   background-color: rgb(196, 243, 26);
@@ -63,8 +70,8 @@ h2 {
 }
 
 nav {
-  z-index: 1;
-  position: fixed;
+  top: 0;
+  position: sticky;
   display: flex;
 
   width: 100%;
@@ -173,7 +180,7 @@ nav {
     url(/ny-rainy-days-code/rainyDays-photos/pexels-leonard-aldenhoff-6354239.jpg)
       no-repeat center / cover;
   width: 100%;
-  height: 57vh;
+  height: 100%;
 }
 
 .hero-container {
@@ -185,7 +192,7 @@ nav {
 }
 
 .hero-text-container {
-  margin-top: 9rem;
+  margin-top: 1.2rem;
   color: rgb(183, 183, 183);
   width: 30em;
 }
@@ -209,6 +216,7 @@ nav {
   padding: 10px 20px;
   border-radius: 2px;
   margin-top: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: rgb(41, 41, 41);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -230,7 +238,7 @@ nav {
 
 .headline-all-jackets {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 20px;
 
   display: block;
 }
@@ -556,10 +564,10 @@ form {
 /*--------------------------------------FOOTER------------------------------------------------*/
 
 .footer-container {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 100px;
   height: 150px;
@@ -663,6 +671,17 @@ form {
     margin: 0;
     margin: 5px 5px;
   }
+  .hero-header {
+    font-size: 3rem;
+  }
+  .cta-text {
+    font-size: 1.5rem;
+  }
+  .cta-button {
+    padding: 8px 10px;
+  }
+  .card-container-header > {
+  }
 }
 
 @media (max-width: 520px) {
@@ -698,15 +717,34 @@ form {
   }
 
   .hero {
-    height: 37vh;
+    height: 26vh;
   }
 
   .cta-text {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .hero-header {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     word-break: break-all;
+  }
+
+  .hero-header h1 {
+    width: 60%;
+  }
+  .cta-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .card-container-header > h2 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+  }
+
+  .card h3,
+  .card p {
+    font-size: 1rem;
   }
 }
