@@ -1,7 +1,8 @@
 export const jacketArray = [
   {
     id: "1",
-    image: "rainyDays-photos/daniel-j-schwarz-VHUbeZMH6Yg-unsplash.jpg",
+    image:
+      "/ny-rainy-days-code/rainyDays-photos/daniel-j-schwarz-VHUbeZMH6Yg-unsplash.jpg",
     name: "Rain jacket",
     description: "New and improved",
     price: 1999,
