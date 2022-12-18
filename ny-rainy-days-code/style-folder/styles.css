@@ -1,0 +1,712 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("root/root.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*NAV AND HERO SECTION*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "EB garamond", serif;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-and-button-text);
+}
+
+/*-----------------------------------------BREADCRUM------------------------------------------*/
+
+.limited-offer {
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  background-color: rgb(196, 243, 26);
+  font-family: var(--heading-and-button-text);
+}
+
+.breadcrum-container {
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrum {
+  text-decoration: none;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 0.5px solid rgb(188, 188, 188);
+  color: gray;
+}
+
+.upper-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(11, 9, 0);
+}
+
+.logo {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+#logo-scroll {
+  scroll-behavior: smooth;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(11, 9, 0);
+}
+
+.nav-2 {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: white;
+}
+
+.search-container {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-cart-shopping {
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+  margin-right: 40px;
+}
+
+.nav-categories {
+  display: flex;
+  align-items: center;
+}
+
+.nav-categories li {
+  padding: 0px 30px;
+  list-style: none;
+}
+
+.nav-categories li a {
+  font-size: 1.3rem;
+}
+
+.nav-categories li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 10%;
+}
+
+.nav-categories li:hover::after {
+  background-color: rgb(255, 149, 11);
+  height: 1px;
+}
+
+.nav-categories li a,
+.cta-button {
+  font-family: "EB Garamond", serif;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-magnifying-glass {
+  color: black;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+#searchField {
+  padding: 4px 20px;
+}
+
+.search-button {
+  padding: 5px 20px;
+  height: 40px;
+  background-color: rgb(255, 149, 11);
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
+  color: white;
+}
+
+.dropdown-content > li {
+  padding: 20px 0px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.716), rgba(0, 0, 0, 0.682)),
+    url(/ny-rainy-days-code/rainyDays-photos/pexels-leonard-aldenhoff-6354239.jpg)
+      no-repeat center / cover;
+  width: 100%;
+  height: 57vh;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text-container {
+  margin-top: 9rem;
+  color: rgb(183, 183, 183);
+  width: 30em;
+}
+
+.cta-section {
+  color: rgb(239, 239, 239);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-text {
+  font-size: 2rem;
+  width: 15em;
+  color: rgb(231, 231, 231);
+}
+
+.cta-button {
+  background-color: var(--button-default-color);
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: rgb(41, 41, 41);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+.hero-header {
+  color: rgb(255, 149, 11);
+  font-size: 4.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------------------------------------Hero section & All-jackets-------------------------------------------------------------------------------------------*/
+
+.headline-all-jackets {
+  text-align: center;
+  padding-top: 100px;
+
+  display: block;
+}
+
+.grid-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.card-container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.card-container-header > h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image {
+  object-fit: cover;
+  width: 300px;
+  height: 350px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  overflow: hidden;
+}
+
+.card {
+  width: 300px;
+  background-color: rgb(238, 238, 238);
+  margin: 10px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.346);
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+.card:hover > a {
+  background-color: var(--button-default-color);
+}
+
+.card h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  padding: 0px 10px;
+  color: rgb(38, 38, 38);
+}
+
+.card p {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  color: rgb(38, 38, 38);
+}
+
+.price {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+  text-align: end;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.cta-card-container {
+  margin-top: 20px;
+}
+
+/*--------------------------- MEN & WOMEN-------------------------------------------*/
+
+.men-and-women {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.men-and-women > h2 {
+  font-size: 2rem;
+}
+
+.men-and-women__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  margin-top: 2rem;
+}
+
+.men-card {
+  width: 34rem;
+  max-height: 43rem;
+  background-image: url(/ny-rainy-days-code/rainyDays-photos/daniel-j-schwarz-VHUbeZMH6Yg-unsplash.jpg);
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.men-card a,
+.women-card a {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  background-color: var(--button-default-color);
+  padding: 10px 20px;
+  border-radius: 4px;
+  position: relative;
+  top: 600px;
+  font-family: var(--heading-and-button-text);
+}
+
+.women-card {
+  width: 34rem;
+  max-height: 43rem;
+  margin-left: 1rem;
+  background: linear-gradient(rgba(173, 173, 173, 0), rgba(0, 0, 0, 0.772)),
+    url(/ny-rainy-days-code/rainyDays-photos/pexels-matt-hardy-2755165.jpg)
+      no-repeat center / cover;
+}
+
+.contact-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 40px;
+  padding: 40px 40px;
+  border-radius: 4px;
+  background-color: rgb(241, 241, 241);
+}
+
+form h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+form input,
+form textarea {
+  margin-top: 10px;
+  border: 0;
+  outline: none;
+}
+
+.smalltext {
+  font-size: 12px;
+  padding-top: 5px;
+  color: rgb(133, 133, 133);
+}
+
+input {
+  height: 40px;
+  font-size: 18px;
+}
+
+label input {
+  width: 100%;
+}
+
+label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#submit {
+  padding: 10px 60px;
+  background-color: rgb(10, 100, 55);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#submit:disabled {
+  background-color: rgb(160, 160, 160);
+}
+
+/*----------------------------------------------------------------Error Message-------------------------------------------*/
+
+.error-message {
+  margin-top: 5px;
+  display: none;
+  color: red;
+  position: absolute;
+  background-color: rgb(255, 217, 217);
+  padding: 5px 10px;
+}
+
+/*--------------------------------------------------------JACKET PAGE----------------------------------------------------------*/
+
+.jacket-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  position: relative;
+}
+
+.product-info {
+  margin-left: 50px;
+  font-size: 1.3rem;
+}
+
+.product-info-list {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.product-info-list li {
+  margin-bottom: 15px;
+}
+
+.jacket-price {
+  margin-top: 100px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.jacket-btn {
+  position: absolute;
+  bottom: 0px;
+  background-color: var(--button-default-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.jacket-btn:hover {
+  cursor: pointer;
+  color: rgb(0, 53, 167);
+  background-color: rgb(232, 133, 41);
+}
+
+.product-image {
+  background-size: cover;
+  height: 500px;
+  width: 300px;
+}
+
+/*--------------------------------------------CART-------------------------------------------------------*/
+
+.cart {
+  display: none;
+  position: fixed;
+  right: 50px;
+  top: 120px;
+  border: 1px solid var(--button-default-color);
+  max-width: 600px;
+  min-width: 200px;
+  padding: 20px;
+  margin: auto;
+}
+
+.cart-image {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+}
+
+.checkout-btn {
+  padding: 10px 60px;
+  background-color: rgb(10, 100, 55);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/*---------------------------------------------------------CART/CHECKOUT------------------------------------*/
+
+.form-wrapper {
+  flex-direction: column;
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+form {
+  max-width: 100%;
+}
+
+/*--------------------------------------FOOTER------------------------------------------------*/
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  height: 150px;
+  color: white;
+  background-color: rgb(11, 9, 0);
+}
+
+.footer-container-jacket-page {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+
+  padding-top: 40px;
+  padding-bottom: 100px;
+  color: white;
+  background-color: rgb(11, 9, 0);
+}
+
+.footer-content > h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.media-content {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+/*Media query main page ---------------------------------------------------------*/
+
+@media (max-width: 1277px) {
+  .search-container > input {
+    width: 100%;
+  }
+
+  .fa-cart-shopping {
+    padding: 20px 0px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1297px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-categories {
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(11, 9, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-categories li {
+    margin: 16px 0;
+  }
+  .nav-categories.active {
+    left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .men-card,
+  .women-card {
+    width: 21rem;
+    max-height: 26rem;
+  }
+  .men-card a,
+  .women-card a {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .men-and-women__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 766px) {
+  .men-card,
+  .women-card {
+    margin: 0;
+    margin: 5px 5px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-text-container {
+    width: 90%;
+  }
+
+  .hero-header {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+
+  .hero {
+    height: 37vh;
+  }
+
+  form {
+    width: 400px;
+  }
+
+  #message-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  ul {
+    margin-left: 0px;
+  }
+
+  .hero {
+    height: 37vh;
+  }
+
+  .cta-text {
+    font-size: 1.5rem;
+  }
+
+  .hero-header {
+    font-size: 2.2rem;
+    word-break: break-all;
+  }
+}

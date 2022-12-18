@@ -1,0 +1,13 @@
+:root {
+  /*-------------------------------------------------------COLOR----------------------------------------------------*/
+
+  --main-header-color: rgb(255, 149, 11);
+  --button-default-color: rgb(255, 149, 11);
+  --offer-color: rgb(163, 92, 0);
+
+  /*------------------------------------------------------------TEXT------------------------------------------------*/
+
+  --heading-and-button-text: "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  --main-text: "EB garamond", serif;
+}
