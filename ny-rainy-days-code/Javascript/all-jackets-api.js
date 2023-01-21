@@ -1,15 +1,17 @@
-import State from "./States/State";
-
 /* CONFIG */
 const apiUrl =
   "https://emdevelopment.no/rainydays-product-lists/wp-json/wc/v3/products?consumer_key=ck_b86c196135fa5b41b37a700f48a7baef4a2c7cfe&consumer_secret=cs_5f525210a7deb0bc1e661148dadfc1bad899c4bf";
 // const products = document.querySelector(".card-container");
 let productList = "";
 
+const State = {
+  products: [],
+};
+
 /* Methods */
 const FetchData = async (url) => {
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(url);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -17,17 +19,16 @@ const FetchData = async (url) => {
   }
 };
 
-const ProcessData = (data) => {
-  data.forEach((product) => {
+const ProcessData = async (data) => {
+  for await (const product of data) {
     State.products.push({
       id: product.id,
       name: product.name,
       status: product.status,
       description: product.description,
       price: product.price,
-      images: product.images,
     });
-  });
+  }
 };
 
 const PasteProductsToTheDom = () => {
@@ -40,7 +41,6 @@ const PasteProductsToTheDom = () => {
         <a href="jacket-page.html?id=${product.id}">
               <img class="image"
               src="${product.images[0].src}"/>
-
           <h3>${product.name}</h3>
           <p>${product.short_description}</p>
           <p class="price">${product.price},-</p>
