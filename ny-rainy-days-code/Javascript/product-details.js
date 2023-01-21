@@ -18,7 +18,7 @@ async function GetProductInfo(productId) {
 function RenderJacketToTheDom(item) {
   const details = document.querySelector(".jacket-grid");
   details.innerHTML = `<div class="product">
-    <div style="background-image: url("${item.images[0].src}")" class="product-image")></div>
+    <div style="background-image: url('${item.images[0].src}');" class="product-image")></div>
     <div class="product-info">
      <h2>${item.name}</h2>
      <h4>${item.description}</h4>
