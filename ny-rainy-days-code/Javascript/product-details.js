@@ -4,7 +4,7 @@ const GetProductIdFromParams = () => {
   return parseInt(params.get("id"));
 };
 
-async function GetProductInfo(productId) {
+async function FetchProductInfoFromApi(productId) {
   const URL = `https://emdevelopment.no/rainydays-product-lists/wp-json/wc/v3/products/${productId}?consumer_key=ck_b86c196135fa5b41b37a700f48a7baef4a2c7cfe&consumer_secret=cs_5f525210a7deb0bc1e661148dadfc1bad899c4bf`;
   try {
     const response = await fetch(URL);
@@ -33,10 +33,14 @@ function RenderJacketToTheDom(item) {
 `;
 }
 
+const OnMounted = async () => {
+  const product = await FetchProductInfoFromApi(productId);
+  RenderJacketToTheDom(product);
+};
+
 /* INITIALIZE */
 const productId = GetProductIdFromParams();
 
 if (productId > 0) {
-  const product = GetProductInfo(productId);
-  RenderJacketToTheDom(product);
+  OnMounted();
 }
