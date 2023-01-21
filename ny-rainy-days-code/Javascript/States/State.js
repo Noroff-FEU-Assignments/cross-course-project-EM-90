@@ -2,4 +2,4 @@ const State = {
   products: [],
 };
 
-module.exports = State;
+export default State;

@@ -1,4 +1,4 @@
-const State = require("./States/State.js");
+import State from "./States/State";
 
 /* CONFIG */
 const apiUrl =
