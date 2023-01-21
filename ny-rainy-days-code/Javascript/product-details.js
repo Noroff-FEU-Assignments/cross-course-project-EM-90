@@ -35,9 +35,8 @@ function RenderJacketToTheDom(item) {
 
 /* INITIALIZE */
 const productId = GetProductIdFromParams();
-console.log("ProductId: ", productId);
 
 if (productId > 0) {
-  const product = GetProductInfo();
+  const product = GetProductInfo(productId);
   RenderJacketToTheDom(product);
 }
