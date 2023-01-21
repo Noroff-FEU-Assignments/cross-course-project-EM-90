@@ -1,8 +1,7 @@
 /* METHOD */
 const GetProductIdFromParams = () => {
-  const string = document.location.search;
-  const params = new URLSearchParams(string);
-  return params.get("id");
+  const params = new URLSearchParams(document.location.search);
+  return parseInt(params.get("id"));
 };
 
 async function GetProductInfo(productId) {
@@ -35,7 +34,8 @@ function RenderJacketToTheDom(item) {
 }
 
 /* INITIALIZE */
-const productId = GetProductIdFromParams(); // Fetching "id" from the URL
+const productId = GetProductIdFromParams();
+console.log("ProductId: ", productId);
 
 if (productId > 0) {
   const product = GetProductInfo();
