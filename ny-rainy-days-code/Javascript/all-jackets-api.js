@@ -24,8 +24,9 @@ const ProcessData = (data) => {
 };
 
 /* INITIALIZE */
-async function OnMounted() {
-  const data = FetchData(apiUrl);
+const OnMounted = async () => {
+  const data = await FetchData(apiUrl);
+
   console.log("Data Testing ", data);
   /*
   ProcessData(data);
@@ -55,6 +56,6 @@ async function OnMounted() {
     products.innerHTML = productList;
   });
   */
-}
+};
 
 OnMounted();
