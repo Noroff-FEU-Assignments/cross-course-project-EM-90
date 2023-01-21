@@ -21,15 +21,8 @@ function RenderJacketToTheDom(item) {
     <div style="background-image: url('${item.images[0].src}');" class="product-image")></div>
     <div class="product-info">
      <h2>${item.name}</h2>
-     <h4>${item.description}</h4>
-     <ul class="product-info-list">
-       <li>Waterproof and wind resistant</li>
-       <li>Good for medium and long trips</li>
-       <li>Green product, made of recycled fabric</li>
-       <li>Multiple pockets for more carrying space</li>
-       <li>High quality zipper (waterproof YKK)</li>
-     </ul>
-     <div class="jacket-price">${item.price}</div>
+     <p>${item.description}</p>
+     <div class="jacket-price">${item.price},-</div>
 `;
 }
 
