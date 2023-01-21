@@ -1,36 +1,23 @@
-// const State = require("./States/State.js");
+const State = require("./States/State.js");
 
 /* CONFIG */
 const apiUrl =
   "https://emdevelopment.no/rainydays-product-lists/wp-json/wc/v3/products?consumer_key=ck_b86c196135fa5b41b37a700f48a7baef4a2c7cfe&consumer_secret=cs_5f525210a7deb0bc1e661148dadfc1bad899c4bf";
-// const products = document.querySelector(".card-container");
+const products = document.querySelector(".card-container");
 let productList = "";
 
 /* Methods */
-const FetchData = async (url) => {
-  try {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.log("Something went wrong fetching products...", error);
-  }
-};
-
-const ProcessData = (data) => {
-  data.forEach((element) => {
-    State.products.push({});
-  });
-};
 
 /* INITIALIZE */
-async function OnMounted() {
-  const data = FetchData(apiUrl);
-  console.log("Data Testing ", data);
-  /*
-  ProcessData(data);
-  */
-  /*
+async function getProducts() {
+  const getUrl = await fetch(apiUrl);
+
+  const apiResult = await getUrl.json();
+
+  const apiData = await apiResult;
+
+  console.log(apiResult);
+
   apiData.forEach((product) => {
     console.log(product);
 
@@ -54,7 +41,6 @@ async function OnMounted() {
 
     products.innerHTML = productList;
   });
-  */
 }
 
-OnMounted();
+getProducts();
