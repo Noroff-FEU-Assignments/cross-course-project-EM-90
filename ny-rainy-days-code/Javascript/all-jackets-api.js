@@ -27,6 +27,7 @@ const ProcessData = async (data) => {
       status: product.status,
       description: product.description,
       price: product.price,
+      images: product.images,
     });
   }
 };
