@@ -1,4 +1,4 @@
-// const State = require("./States/State.js");
+const State = require("./States/State.js");
 
 /* CONFIG */
 const apiUrl =
@@ -18,44 +18,47 @@ const FetchData = async (url) => {
 };
 
 const ProcessData = (data) => {
-  data.forEach((element) => {
-    State.products.push({});
+  data.forEach((product) => {
+    State.products.push({
+      id: product.id,
+      name: product.name,
+      status: product.status,
+      description: product.description,
+      price: product.price,
+      images: product.images,
+    });
   });
+};
+
+const PasteProductsToTheDom = () => {
+  // foreach product, create a card element in the DOM
+  State.products.forEach((product) => {
+    productList += ` 
+      <section class="card-container-header">
+      <div class="card-container">
+        <div class="card">
+        <a href="jacket-page.html?id=${product.id}">
+              <img class="image"
+              src="${product.images[0].src}"/>
+
+          <h3>${product.name}</h3>
+          <p>${product.short_description}</p>
+          <p class="price">${product.price},-</p>
+        </a>
+        </div>
+        </div>
+      </section>
+      `;
+    products.innerHTML = productList;
+  });
+};
+
+const OnMounted = async () => {
+  const data = await FetchData(apiUrl);
+  console.log("Fetched Data ", data);
+  await ProcessData(data);
+  PasteProductsToTheDom();
 };
 
 /* INITIALIZE */
-const OnMounted = async () => {
-  const data = await FetchData(apiUrl);
-
-  console.log("Data Testing ", data);
-  /*
-  ProcessData(data);
-  */
-  /*
-  apiData.forEach((product) => {
-    console.log(product);
-
-    productList += ` 
-<section class="card-container-header">
- <div class="card-container">
-   <div class="card">
-   <a href="jacket-page.html?id=${product.id}">
-        <img class="image"
-        ${product.images}
-        />
-
-     <h3>${product.name}</h3>
-     <p>${product.short_description}</p>
-     <p class="price">${product.price},-</p>
-   </a>
-   </div>
-   </div>
-</section>
- `;
-
-    products.innerHTML = productList;
-  });
-  */
-};
-
 OnMounted();
