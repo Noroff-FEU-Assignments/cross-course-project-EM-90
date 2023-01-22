@@ -22,7 +22,7 @@ function RenderJacketToTheDom(item) {
     <div class="product-info">
      <h2>${item.name}</h2>
      <p>${item.description}</p>
-     <div class="jacket-price">${item.price},-</div>
+     <div class="jacket-price">Price NOK ${item.price},-</div>
 `;
 }
 
