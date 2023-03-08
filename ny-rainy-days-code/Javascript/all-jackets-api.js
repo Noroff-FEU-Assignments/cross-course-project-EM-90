@@ -4,7 +4,6 @@ const apiUrl =
 // const products = document.querySelector(".card-container");
 const products = document.querySelector(".card-container");
 let productList = "";
-
 const State = {
   products: [],
 };
