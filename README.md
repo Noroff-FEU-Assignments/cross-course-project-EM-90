@@ -24,6 +24,10 @@ The site is for the target audience, men and women from 30 to 50 years of age. T
 - You can run it through the live server plug-in in VScode, or go to the website
 
 
+## Contributing
+
+if you have ideas or you want to contribute in any way just contact me
+
 ## Contact
 
 eirik.michielsen@gmail.com
