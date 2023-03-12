@@ -21,7 +21,7 @@ The site is for the target audience, men and women from 30 to 50 years of age. T
 
 ### Running
 
--You can run it through the live server plug-in in VScode, or go to the website
+- You can run it through the live server plug-in in VScode, or go to the website
 
 
 ## Contact
