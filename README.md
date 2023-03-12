@@ -15,7 +15,7 @@ The site is for the target audience, men and women from 30 to 50 years of age. T
 
 ## Getting Started
 
-###instaling
+### instaling
 
 - Clone the repo
 
