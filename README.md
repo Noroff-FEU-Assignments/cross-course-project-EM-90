@@ -1,6 +1,6 @@
 # Rainy Days cross-course-project-EM-90
 
-![image](/cross-course-project-EM-90/ny-rainy-days-code/rainyDays-photos/Cross-course-project.PNG)
+![image](/ny-rainy-days-code/rainyDays-photos/Cross-course-project.PNG)
 
 ## Description
 
